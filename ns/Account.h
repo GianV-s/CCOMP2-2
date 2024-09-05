@@ -32,11 +32,12 @@ public:
         cout << "ingrese el retiro: ";
         int wAmount;
         cin >> wAmount;
-        if (wAmount >= balance){
+        if (wAmount <= balance){
             balance = balance - wAmount;
         }
         else{
             balance = 0;
+            cout << "\nWithdrawal amount exceeded account balance.\n";
         }
     }
     std::string getName() const{
