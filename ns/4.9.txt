@@ -1,0 +1,6 @@
+4.9
+a) no usa llaves
+b) << no >>
+c) no usa {} en el if y solo puede entrar una linea asi
+4.10
+infinito
