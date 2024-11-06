@@ -3,16 +3,19 @@ hours worked).
 */
 
 
-#include "SalariedEmployee.h"
+#include "Employee.h"
 
-class HourlyWorker : public SalariedEmployee{
+class HourlyWorker : public Employee{
 public:
     HourlyWorker(const std::string&, const std::string&,
-            const std::string&, const Date, double = 0.0, int);
+            const std::string&, const Date, double = 0.0, int = 0);
     virtual ~HourlyWorker() = default;
 
-    void setWage(int);
+    void setWage(double);
     double getWage() const;
+
+    void setHours(int);
+    int getHours() const;
 
     virtual double earnings() const override;
     virtual std::string toString() const override;

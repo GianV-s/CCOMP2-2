@@ -12,6 +12,7 @@ if the current month is the month in which the Employee’s birthday occurs. */
 #include "SalariedEmployee.h"
 #include "CommissionEmployee.h"
 #include "BasePlusCommissionEmployee.h"
+#include "HourlyWorker.h"
 
 using namespace std;
 
@@ -28,6 +29,8 @@ int main() {
             "Sue", "Jones", "333-33-3333",Date(2000,8,22), 10000, .06};
     BasePlusCommissionEmployee basePlusCommissionEmployee{
             "Bob", "Lewis", "444-44-4444",Date(1993,11,07), 5000, .04, 300};
+    HourlyWorker hourlyWorker1{"Alan", "Pearson", "555-55-5555", Date(1998,9,29), 20.0, 40};
+    HourlyWorker hourlyWorker2{"Alana", "Pearsone", "555-55-5558", Date(1998,9,26), 20.0, 45};
     
     vector<Employee *> employees{&salariedEmployee, &commissionEmployee, &basePlusCommissionEmployee};
 

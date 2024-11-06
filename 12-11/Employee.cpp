@@ -6,7 +6,8 @@ using namespace std;
 
 Employee::Employee(const string& first, const string& last,
         const string& ssn, const Date _bDate)
-        : firstName(first), lastName(last), socialSecurityNumber(ssn), bDate(_bDate) {}
+        : firstName(first), lastName(last),
+         socialSecurityNumber(ssn), bDate(_bDate) {}
 
 void Employee::setFirstName(const string& first) {
     firstName = first;
